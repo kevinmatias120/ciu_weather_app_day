@@ -67,7 +67,20 @@ function fechaActual(){
     var f=new Date();
     
     document.getElementById("fecha").innerHTML= dias[f.getDay()] +","+ f.getDate() +" "+ meses[f.getMonth()] +" "+ f.getFullYear();
-    document.getElementById("dayNext1").innerHTML= dias[f.getUTCDay() + 1] +" "+ (f.getDate() + 1);
-    document.getElementById("dayNext2").innerHTML= dias[f.getUTCDay() ] +" "+ (f.getDate() );
-    document.getElementById("dayNext3").innerHTML= dias[f.getUTCDay() ] +" "+ (f.getDate() );
+    document.getElementById("dayNext1").innerHTML= dias[limite(1,f.getDay(),7)] +" "+ limite(1,f.getDate(),32);
+    document.getElementById("dayNext2").innerHTML= dias[limite(2,f.getDay(),7)] +" "+ limite(2,f.getDate(),32);
+    document.getElementById("dayNext3").innerHTML= dias[limite(3,f.getDay(),7)] +" "+ limite(3,f.getDate(),32);
+}
+
+function limite(suma,actual,tamanio){
+    var valor = actual + suma;
+   if(valor >= tamanio ){
+        var aux = valor - tamanio
+        if(aux == 0){
+            valor=1
+        }else{
+            valor = aux + 1
+        }
+   }
+   return valor;
 }
