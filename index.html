@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clima</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body onload="fechaActual();">
+    <div class="cielo">
+        <img src="img/city.png" alt="city" class="imagen">
+    </div>
+    
+    <div class="panel">
+        <div class="datoActual"><p id="fecha" class="letra"></p></div>
+        <div class="ciudadActual"><p style="position:absolute; top: 30%;">Tesei, Buenos Aires</p></div>
+        <div class="climaActual">
+            <div class="cuadro1"id="icono"></div>
+            <div class="cuadro2" id="climaActual"></div>
+            <div class="cuadro3" id="tempVariacion"></div>
+        </div>
+        <div class="dato1">
+            <div class="cuadro1" id="humedad"></div>
+            <div class="cuadro2" id="presion"></div>
+            <div class="cuadro3" id="viento"></div>
+        </div>
+        <div class="dato2">
+            <div class="cuadro1" id="saleSol"></div>
+            <div class="cuadro2" id="ocultaSol"></div>
+            <div class="cuadro3" id="tiempoDia">
+                <img src="img/sand-clock.png" class="icon">
+                <p class="letraFuente1">Null</p>
+                <p class="letraFuente2">DayTime</p>
+            </div>
+        </div>
+        <div class="siguienteDias" id="arrayDay">
+            <div class="cuadro1">
+                <div id="dia0"></div>
+                <p class="letraFuente1" id="dayNext1"></p>
+            </div>
+            <div class="cuadro2">
+                <div id="dia1"></div>
+                <p class="letraFuente1" id="dayNext2"></p>
+            </div>
+            <div class="cuadro3" >
+                <div id="dia2"></div>
+                <p class="letraFuente1" id="dayNext3"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

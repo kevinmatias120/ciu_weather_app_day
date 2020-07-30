@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////*/
+.cielo{
+    position: absolute;
+    height: 300px;
+    background: linear-gradient(180deg, #54B4F9 5.67%, #FFFFFF 127%);
+}
+
+.imagen{
+    position: absolute;
+    top: 27.00%;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.panel{
+    position: absolute;
+    height: 531px;
+    left: 0px;
+    top: 279px;
+    background: #FFFFFF;
+    box-shadow: 0px -16px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+
+}
+
+.icon{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    left: 33%;
+    top: 20%;
+}
+
+.letra{
+    position: absolute;
+    left: 10%;
+    top: 2%;
+    color: #999999;
+}
+
+.letraFuente1{
+    position: absolute;
+    text-align: center;
+    top: 65%;
+
+    color: #444444;
+}
+
+.letraFuente2{
+    position: absolute;
+    top: 85%;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #999999;
+}
+
+.ciudadActual{
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    left: 50%;
+    top: 0%;
+    border-radius: 15px;
+    background: rgba(13, 159, 234, 0.08);
+
+    
+    text-align: center;
+    color: #0DA0EA;
+}
+
+.cuadro1{
+    position: absolute;
+    width: 33%;
+    height: 90%;
+    left: 0%;
+    top: 5%;
+}
+
+.cuadro2{
+    position: absolute;
+    width: 33%;
+    height: 90%;
+    left: 33.33%;
+    top: 5%;
+}
+
+.cuadro3{
+    position: absolute;
+    width: 33%;
+    height: 90%;
+    left: 66.66%;
+    top: 5%;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+.climaActual{
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left:0%;
+    top: 10%;
+}
+
+.temperatura{
+    position: absolute;
+    text-align: center;
+    top: 25%; 
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    color: #000000;
+}
+
+.c{
+    position: absolute;
+    left: 80%;
+    top: 28%;
+
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #666666;
+}
+
+.tempMin{
+    top: 60%;
+    position: absolute;
+    text-align: center;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #666666;
+
+}
+
+.tempMax{
+    top: 30%;
+    position: absolute;
+    text-align: center;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #666666;
+
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////*/
+.dato1{
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left:0%;
+    top: 32.5%; 
+}
+
+.dato2{
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left:0%;
+    top: 55%;
+}
+
+.siguienteDias{
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left:0%;
+    top: 77.5%;
+}
